@@ -20,3 +20,15 @@ function removeEmoji(message) {
 // console.log(
 //   removeEmoji("I love playing videogames emoji3465 it's one of my hobbies")
 // );
+
+///---///
+
+function checkPhoneNumber(number) {
+  if (/^\(\+[0-9][0-9]\) [0-9]{3}-[0-9]{3}-[0-9]{3}$/.test(number)) {
+    return "Thanks! You can now download me to your phone.";
+  }
+  return `Oops, it seems like I can't reach out to ${number}`;
+}
+
+// console.log(checkPhoneNumber("(+34) 659-771-594"));
+// console.log(checkPhoneNumber("659-771-594"));
