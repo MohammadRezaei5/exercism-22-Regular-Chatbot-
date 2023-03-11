@@ -41,3 +41,14 @@ function getURL(userInput) {
 }
 
 // console.log(getURL("I learned a lot from exercism.com"));
+
+///---///
+
+// let str = "Smith, John";
+
+function niceToMeetYou(fullName) {
+  const politeName = fullName.replace(/([a-z]+), ([a-z]+)/i, "$2 $1");
+  return `Nice to meet you, ${politeName}`;
+}
+
+// console.log(niceToMeetYou(str));
