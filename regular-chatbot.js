@@ -10,3 +10,13 @@ function isValidCommand(command) {
 // console.log(
 //   isValidCommand("CHATBOT, do you have a solution for this challenge?")
 // );
+
+///---///
+
+function removeEmoji(message) {
+  return message.replaceAll(/emoji[0-9]+/g, "");
+}
+
+// console.log(
+//   removeEmoji("I love playing videogames emoji3465 it's one of my hobbies")
+// );
