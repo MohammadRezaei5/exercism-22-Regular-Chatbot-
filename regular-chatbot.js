@@ -32,3 +32,12 @@ function checkPhoneNumber(number) {
 
 // console.log(checkPhoneNumber("(+34) 659-771-594"));
 // console.log(checkPhoneNumber("659-771-594"));
+
+///---///
+
+function getURL(userInput) {
+  const REGEX = /\w+\.\w+/g;
+  return userInput.match(REGEX);
+}
+
+// console.log(getURL("I learned a lot from exercism.com"));
